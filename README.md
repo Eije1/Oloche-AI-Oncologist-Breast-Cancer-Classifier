@@ -80,7 +80,7 @@ Comparison of the models in this project based on their accuracy
 - **K-Nearest Neighbors:** 95.6%
   
 ### Findings
-1. Top Predictive Features
+1. **Top Predictive Features**
 The most important features for classification are:
 - Worst concave points
 - Worst perimeter
@@ -88,8 +88,11 @@ The most important features for classification are:
 - Worst radius
 - Worst area
 
-2. Class Imbalance Impact: Addressing class imbalance improved recall for malignant cases without sacrificing overall accuracy.
-3. Model Robustness:** Cross-validation confirmed model stability with consistent performance across different data splits.
+2. **Class Imbalance Impact:**
+Addressing class imbalance improved recall for malignant cases without sacrificing overall accuracy.
+
+4. **Model Robustness:**
+Cross-validation confirmed model stability with consistent performance across different data splits.
 
 ## Using the Web Interface
 The Gradio interface provides an intuitive way to interact with the model:
@@ -148,3 +151,31 @@ The Gradio interface includes:
 - Feature scaling using saved scaler
 - Model prediction and probability calculation
 - Results formatting and visualization
+
+## Code Examples (Prediction Function)
+
+def predict_breast_cancer(*feature_values):
+    """Predict breast cancer diagnosis from input features"""
+    try:
+        features = np.array(feature_values).reshape(1, -1)
+        features_scaled = scaler.transform(features)
+        prediction = model.predict(features_scaled)[0]
+        prediction_proba = model.predict_proba(features_scaled)[0]
+        
+        diagnosis = "Malignant" if prediction == 0 else "Benign"
+        confidence = max(prediction_proba) * 100
+        
+        return {
+            "Diagnosis": diagnosis,
+            "Confidence Level": f"{confidence:.2f}%",
+            "Probability Analysis": {
+                "Benign": f"{prediction_proba[1] * 100:.2f}%",
+                "Malignant": f"{prediction_proba[0] * 100:.2f}%"
+            },
+            "Risk Assessment": "High" if diagnosis == "Malignant" else "Low",
+            "Model Performance": f"{accuracy:.2%} (Validated)",
+            "Medical Advice": "Consult specialist immediately" if diagnosis == "Malignant" 
+                             else "Routine monitoring recommended"
+        }
+    except Exception as e:
+        return {"Error": f"Please check all values are numbers. Error: {str(e)}"}
