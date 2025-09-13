@@ -1,14 +1,14 @@
 # Oloche's AI Oncologist: Breast Cancer Detector
 
-## UI Title: Oloche's AI Oncologist: Breast Cancer Detector
-## Research Title: Investigating the Efficacy of Machine Learning Algorithms for the Early Detection of Breast Cancer Malignancies
+** UI Title:** Oloche's AI Oncologist: Breast Cancer Detector
+**Research Title:** Investigating the Efficacy of Machine Learning Algorithms for the Early Detection of Breast Cancer Malignancies
 
 ## Project Overview
 
 This project implements a machine learning system for breast cancer classification using the Wisconsin Breast Cancer Dataset. The system analyzes diagnostic measurements to classify tumors as either malignant or benign with high accuracy. The model is deployed as an interactive web application using Gradio and Hugging Face Spaces.
 
 
-**Live Demo**: [Hugging Face Spaces Link](https://huggingface.co/spaces/eijeoloche1/Classify_tumors_as_Malignant_or_Benign)
+**Webapp**: [Hugging Face Spaces Link](https://huggingface.co/spaces/eijeoloche1/Classify_tumors_as_Malignant_or_Benign)
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.0%2B-orange)
@@ -66,16 +66,14 @@ The project uses the **Wisconsin Breast Cancer Dataset** containing:
 
 ## Local Installation
 1. **Clone the repository**
-
-git clone https://github.com/eije1/oloche-ai-oncologist-breast-cancer-classifier.git
-cd breast-cancer-classifier
+- git clone https://github.com/eije1/oloche-ai-oncologist-breast-cancer-classifier.git
+- cd breast-cancer-classifier
 
 2. **Install dependencies**
-
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 3. **Run the application locally**
-python app.py
+- python app.py
    
 ## Model Performance
 The best performing model achieves the following results in terms of metric-score
