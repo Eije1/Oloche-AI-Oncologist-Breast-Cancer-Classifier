@@ -4,6 +4,9 @@
 
 This project implements a machine learning system for breast cancer classification using the Wisconsin Breast Cancer Dataset. The system analyzes diagnostic measurements to classify tumors as either malignant or benign with high accuracy. The model is deployed as an interactive web application using Gradio and Hugging Face Spaces.
 
+**UI Title:** Oloche's AI Oncologist: Breast Cancer Detector
+**Research Title**: Investigating the Efficacy of Machine Learning Algorithms for the Early Detection of Breast Cancer Malignancies
+
 **Live Demo**: [Hugging Face Spaces Link](https://huggingface.co/spaces/eijeoloche1/Classify_tumors_as_Malignant_or_Benign)
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
@@ -14,7 +17,7 @@ This project implements a machine learning system for breast cancer classificati
 
 ## Machine Learning Framework
 
-- **Multiple ML Algorithms**: Implements and compares Logistic Regression, Random Forest, SVM, Gradient Boosting, and KNNs
+- **ML Algorithms**: Implements and compares Logistic Regression, Random Forest, SVM, Gradient Boosting, and K-Nearest Neighbors
 - **Hyperparameter Tuning**: Optimizes model performance using GridSearchCV
 - **Class Imbalance Handling**: Addresses dataset imbalance using class weighting
 - **Interactive Web Interface**: User-friendly Gradio app deployed on Hugging Face Spaces
@@ -81,8 +84,6 @@ Comparison of the models in this project based on their accuracy
   
 ### Findings
 1. **Top Predictive Features:**
-   
-The most important features for classification are
 - Worst concave points
 - Worst perimeter
 - Mean concave points
@@ -197,7 +198,7 @@ Test the model with these example values:
 0.02387, 0.01315, 0.0198, 0.0023, 15.11, 19.26, 99.7, 711.2,
 0.144, 0.1773, 0.239, 0.1288, 0.2977, 0.07259
 
-## Future Enhancements
+## Recommendations
 - Integration with medical imaging data
 - Additional model architectures (Deep Learning)
 - Patient history tracking
@@ -208,9 +209,9 @@ Test the model with these example values:
 ## Important Disclaimer
 This tool is for educational and research purposes only. It should not be used as a substitute for professional medical diagnosis, advice, or treatment. Always consult with qualified healthcare professionals for medical concerns. The model was trained on historical data and may not account for all clinical factors. Results should be interpreted by medical professionals in context with other diagnostic information.
 
-## Author
-EIJE, Oloche Celestine 
-Email: eijeoloche1@gmail.com
+## Researacher/Developer
+- EIJE, Oloche Celestine
+- Email: eijeoloche1@gmail.com
 
 ## License
 This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
