@@ -10,8 +10,7 @@ This project implements a machine learning system for breast cancer classificati
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.0%2B-orange)
 ![Gradio](https://img.shields.io/badge/Gradio-3.0%2B-green)
 ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Spaces-yellow)
-![License](https://img.shields.io/badge/License-Apache%25202.0-blue)
-![ResearchGate](https://www.researchgate.net/profile/Oloche-Eije-grey)
+![License](https://img.shields.io/badge/License-Apache%2.0-blue)
 
 ## Machine Learning Framework
 
