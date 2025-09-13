@@ -196,3 +196,35 @@ Test the model with these example values:
 0.1885, 0.05766, 0.2699, 0.7886, 2.058, 23.56, 0.008462, 0.0146,
 0.02387, 0.01315, 0.0198, 0.0023, 15.11, 19.26, 99.7, 711.2,
 0.144, 0.1773, 0.239, 0.1288, 0.2977, 0.07259
+
+## Future Enhancements
+- Integration with medical imaging data
+- Additional model architectures (Deep Learning)
+- Patient history tracking
+- Multi-language support
+- Export functionality for medical reports
+- API endpoints for integration with healthcare systems
+
+## Important Disclaimer
+This tool is for educational and research purposes only. It should not be used as a substitute for professional medical diagnosis, advice, or treatment. Always consult with qualified healthcare professionals for medical concerns. The model was trained on historical data and may not account for all clinical factors. Results should be interpreted by medical professionals in context with other diagnostic information.
+
+## Author
+EIJE, Oloche Celestine 
+Email: eijeoloche1@gmail.com
+
+## License
+This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
+
+## Acknowledgments
+- University of Wisconsin for the Breast Cancer Dataset
+- Scikit-learn team for machine learning libraries
+- Gradio team for the easy-to-use web interface framework
+- Hugging Face for the deployment platform
+- Open-source community for valuable tools and resources
+
+## References
+1. Street, W.N., Wolberg, W.H., & Mangasarian, O.L. (1993). Nuclear feature extraction for breast tumor diagnosis. IS&T/SPIE 1993 International Symposium on Electronic Imaging: Science and Technology, 1905, 861-870.
+2. Pedregosa et al. (2011). Scikit-learn: Machine Learning in Python. JMLR 12, pp. 2825-2830.
+3. Abid, A. (2019). Gradio: Hassle-Free Sharing and Testing of ML Models in the Wild. ICML HILL Workshop.
+
+
