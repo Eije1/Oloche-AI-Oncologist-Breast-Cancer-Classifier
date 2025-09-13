@@ -80,16 +80,16 @@ Comparison of the models in this project based on their accuracy
 - **K-Nearest Neighbors:** 95.6%
   
 ### Findings
-- **Top Predictive Features:**
+1. Top Predictive Features
 The most important features for classification are:
-1. Worst concave points
-2. Worst perimeter
-3. Mean concave points
-4. Worst radius
-5. Worst area
+- Worst concave points
+- Worst perimeter
+- Mean concave points
+- Worst radius
+- Worst area
 
-- **Class Imbalance Impact:** Addressing class imbalance improved recall for malignant cases without sacrificing overall accuracy.
-- **Model Robustness:** Cross-validation confirmed model stability with consistent performance across different data splits.
+2. Class Imbalance Impact: Addressing class imbalance improved recall for malignant cases without sacrificing overall accuracy.
+3. Model Robustness:** Cross-validation confirmed model stability with consistent performance across different data splits.
 
 ## Using the Web Interface
 The Gradio interface provides an intuitive way to interact with the model:
@@ -111,3 +111,40 @@ The Gradio interface provides an intuitive way to interact with the model:
 - Color-coded diagnosis badges
 - Confidence meter visualization
 - Detailed JSON results
+
+## Hugging Face Deployment
+This project is deployed on Hugging Face Spaces using the following configuration:
+
+**Deployment Files**
+- app.py: Main application file with Gradio interface
+- requirements.txt: Python dependencies
+- README.md: Project documentation
+
+**Deployment Process**
+- Create a new Space on Hugging Face
+- Set the Space SDK to Gradio
+- Upload the project files
+- The Space automatically builds and deploys the application
+
+## Technical Implementation
+**Model Training**
+The model was trained using a comprehensive approach:
+
+- Multiple algorithms compared
+- Hyperparameter tuning with GridSearchCV
+- Class imbalance addressing
+- Cross-validation for robustness
+
+**Web Interface**
+The Gradio interface includes:
+
+- Custom CSS styling for medical aesthetic
+- Input validation and error handling
+- Responsive design for different devices
+- Example data for quick testing
+
+**Prediction Pipeline**
+- Input validation and preprocessing
+- Feature scaling using saved scaler
+- Model prediction and probability calculation
+- Results formatting and visualization
