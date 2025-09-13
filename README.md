@@ -80,8 +80,9 @@ Comparison of the models in this project based on their accuracy
 - **K-Nearest Neighbors:** 95.6%
   
 ### Findings
-1. **Top Predictive Features**
-The most important features for classification are:
+1. **Top Predictive Features:**
+   
+The most important features for classification are
 - Worst concave points
 - Worst perimeter
 - Mean concave points
@@ -90,8 +91,7 @@ The most important features for classification are:
 
 2. **Class Imbalance Impact:**
 Addressing class imbalance improved recall for malignant cases without sacrificing overall accuracy.
-
-4. **Model Robustness:**
+3. **Model Robustness:**
 Cross-validation confirmed model stability with consistent performance across different data splits.
 
 ## Using the Web Interface
@@ -179,3 +179,20 @@ def predict_breast_cancer(*feature_values):
         }
     except Exception as e:
         return {"Error": f"Please check all values are numbers. Error: {str(e)}"}
+
+## Testing the Model
+Test the model with these example values:
+
+**Malignant Case Example:**
+
+17.99, 10.38, 122.80, 1001.0, 0.1184, 0.2776, 0.3001, 0.1471,
+0.2419, 0.07871, 1.095, 0.9053, 8.589, 153.4, 0.006399, 0.04904,
+0.05373, 0.01587, 0.03003, 0.006193, 25.38, 17.33, 184.6, 2019.0,
+0.1622, 0.6656, 0.7119, 0.2654, 0.4601, 0.1189
+
+**Benign Case Example:**
+
+13.54, 14.36, 87.46, 566.3, 0.09779, 0.08129, 0.06664, 0.04781,
+0.1885, 0.05766, 0.2699, 0.7886, 2.058, 23.56, 0.008462, 0.0146,
+0.02387, 0.01315, 0.0198, 0.0023, 15.11, 19.26, 99.7, 711.2,
+0.144, 0.1773, 0.239, 0.1288, 0.2977, 0.07259
