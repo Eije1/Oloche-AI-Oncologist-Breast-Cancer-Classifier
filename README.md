@@ -10,7 +10,7 @@ This project implements a machine learning system for breast cancer classificati
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.0%2B-orange)
 ![Gradio](https://img.shields.io/badge/Gradio-3.0%2B-green)
 ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Spaces-yellow)
-[![License](https://img.shields.io/badge/License-Apache%25202.0-blue)
+![License](https://img.shields.io/badge/License-Apache%25202.0-blue)
 
 ## Machine Learning Framework
 
@@ -40,33 +40,32 @@ The project uses the **Wisconsin Breast Cancer Dataset** containing:
 
 ##  Project Architecture
 
-oloche-ai-oncologist-breast-cancer-classifier/
+*oloche-ai-oncologist-breast-cancer-classifier/*
 
 ├── app.py (Main Gradio application)
+
 ├── requirements.txt (Python dependencies)
+
 ├── README.md (Project documentation)
+
 ├── models/
+
 │ ├── best_breast_cancer_model.pkl (Trained model)
+
 │ └── scaler.pkl (Feature scaler)
+
 ├── notebooks/
+
 │ └── Breast_Cancer_Classification.ipynb (Complete analysis notebook)
 
 
 ## How to Use
 
-**Using the Hugging Face App**
 - Visit the [webapp](https://huggingface.co/spaces/eijeoloche1/Classify_tumors_as_Malignant_or_Benign)
 - Use the example buttons to load sample data
 - Click "Analyze Data" to get predictions
 - View detailed diagnostic report with confidence scores
 - Please, kindly follow my instructions after getting the reports
-  
-### Using the Hugging Face App
-
-1. Visit the [live demo](https://huggingface.co/spaces/eijeoloche1/Classify_tumors_as_Malignant_or_Benign)
-2. Use the example buttons to load sample data
-3. Click "Analyze Data" to get predictions
-4. View detailed diagnostic report with confidence scores
 
 ## Model Performance
 The best performing model achieves the following results in terms of metric-score
@@ -77,13 +76,15 @@ The best performing model achieves the following results in terms of metric-scor
 - **F1-Score**: 96.2%
 - **AUC-ROC%**: 99.2
 
+
 ## Model Comparison
-Model	Accuracy
-Random Forest (Tuned)	97.4%
-SVM (Tuned)	97.4%
-Gradient Boosting	95.6%
-Logistic Regression	96.5%
-K-Nearest Neighbors	95.6%
+Let us compare different models based in this project based on their accuracy
+
+- **Random Forest (Tuned)**:	97.4%
+- **SVM (Tuned)**: 97.4%
+- **Gradient Boosting:** 95.6%
+- **Logistic Regression:** 96.5%
+- **K-Nearest Neighbors:** 95.6%
   
 ## Findings
 Top Predictive Features: The most important features for classification are:
