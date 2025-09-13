@@ -14,7 +14,7 @@ This project implements a machine learning system for breast cancer classificati
 
 ## Machine Learning Framework
 
-- **Multiple ML Algorithms**: Implements and compares Logistic Regression, Random Forest, SVM, Gradient Boosting, and K-Nearest Neighbors
+- **Multiple ML Algorithms**: Implements and compares Logistic Regression, Random Forest, SVM, Gradient Boosting, and KNNs
 - **Hyperparameter Tuning**: Optimizes model performance using GridSearchCV
 - **Class Imbalance Handling**: Addresses dataset imbalance using class weighting
 - **Interactive Web Interface**: User-friendly Gradio app deployed on Hugging Face Spaces
