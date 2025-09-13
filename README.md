@@ -1,6 +1,7 @@
 # Oloche's AI Oncologist: Breast Cancer Detector
 
-** UI Title:** Oloche's AI Oncologist: Breast Cancer Detector
+**UI Display Title:** Oloche's AI Oncologist: Breast Cancer Detector
+
 **Research Title:** Investigating the Efficacy of Machine Learning Algorithms for the Early Detection of Breast Cancer Malignancies
 
 ## Project Overview
@@ -168,7 +169,7 @@ The Gradio interface includes:
 ## Code Examples (Prediction Function)
 
 def predict_breast_cancer(*feature_values):
-    """Predict breast cancer diagnosis from input features"""
+    *Predict breast cancer diagnosis from input features*
     try:
         features = np.array(feature_values).reshape(1, -1)
         features_scaled = scaler.transform(features)
