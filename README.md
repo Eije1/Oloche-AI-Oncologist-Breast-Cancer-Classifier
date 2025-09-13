@@ -42,21 +42,14 @@ The project uses the **Wisconsin Breast Cancer Dataset** containing:
 
 *oloche-ai-oncologist-breast-cancer-classifier/*
 
-├── app.py (Main Gradio application)
-
-├── requirements.txt (Python dependencies)
-
-├── README.md (Project documentation)
-
-├── models/
-
-│ ├── best_breast_cancer_model.pkl (Trained model)
-
-│ └── scaler.pkl (Feature scaler)
-
-├── notebooks/
-
-│ └── Breast_Cancer_Classification.ipynb (Complete analysis notebook)
+- ├── app.py (Main Gradio application)
+- ├── requirements.txt (Python dependencies)
+- ├── README.md (Project documentation)
+- ├── models/
+- │ ├── best_breast_cancer_model.pkl (Trained model
+- │ └── scaler.pkl (Feature scaler)
+- ├── notebooks/
+- │ └── Breast_Cancer_Classification.ipynb (Complete analysis notebook)
 
 
 ## How to Use
@@ -78,7 +71,7 @@ The best performing model achieves the following results in terms of metric-scor
 
 
 ## Model Comparison
-Let us compare different models based in this project based on their accuracy
+Comparison of the models in this project based on their accuracy
 
 - **Random Forest (Tuned)**:	97.4%
 - **SVM (Tuned)**: 97.4%
@@ -86,52 +79,35 @@ Let us compare different models based in this project based on their accuracy
 - **Logistic Regression:** 96.5%
 - **K-Nearest Neighbors:** 95.6%
   
-## Findings
-Top Predictive Features: The most important features for classification are:
+### Findings
+- **Top Predictive Features:**
+The most important features for classification are:
+1. Worst concave points
+2. Worst perimeter
+3. Mean concave points
+4. Worst radius
+5. Worst area
 
-Worst concave points
+- **Class Imbalance Impact:** Addressing class imbalance improved recall for malignant cases without sacrificing overall accuracy.
+- **Model Robustness:** Cross-validation confirmed model stability with consistent performance across different data splits.
 
-Worst perimeter
-
-Mean concave points
-
-Worst radius
-
-Worst area
-
-Class Imbalance Impact: Addressing class imbalance improved recall for malignant cases without sacrificing overall accuracy.
-
-Model Robustness: Cross-validation confirmed model stability with consistent performance across different data splits.
-
-🎮 Using the Web Interface
+## Using the Web Interface
 The Gradio interface provides an intuitive way to interact with the model:
 
-Input Methods:
+**Input Methods:**
+- Manually enter 30 tumor characteristic values
+- Use "Load Default" for average values
+- Use "Malignant Example" or "Benign Example" for sample cases
+- Use "Clear All" to reset inputs
 
-Manually enter 30 tumor characteristic values
+**Output Features:**
+- Clear diagnosis (Benign/Malignant)
+- Confidence percentage
+- Probability analysis for both classes
+- Risk assessment level
+- Personalized medical advice
 
-Use "Load Default" for average values
-
-Use "Malignant Example" or "Benign Example" for sample cases
-
-Use "Clear All" to reset inputs
-
-Output Features:
-
-Clear diagnosis (Benign/Malignant)
-
-Confidence percentage
-
-Probability analysis for both classes
-
-Risk assessment level
-
-Personalized medical advice
-
-Visual Elements:
-
-Color-coded diagnosis badges
-
-Confidence meter visualization
-
-Detailed JSON results
+**Visual Elements:**
+- Color-coded diagnosis badges
+- Confidence meter visualization
+- Detailed JSON results
