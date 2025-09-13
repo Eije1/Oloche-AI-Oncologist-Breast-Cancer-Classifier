@@ -10,7 +10,8 @@ This project implements a machine learning system for breast cancer classificati
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.0%2B-orange)
 ![Gradio](https://img.shields.io/badge/Gradio-3.0%2B-green)
 ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Spaces-yellow)
-![License](https://img.shields.io/badge/License-MIT-red)
+![License](https://img.shields.io/badge/License-Apache%25202.0-blue)
+![ResearchGate](https://www.researchgate.net/profile/Oloche-Eije-grey)
 
 ## Machine Learning Framework
 
@@ -76,6 +77,14 @@ The best performing model achieves the following results in terms of metric-scor
 - **Recall**: 95.8%
 - **F1-Score**: 96.2%
 - **AUC-ROC%**: 99.2
+
+## Model Comparison
+Model	Accuracy
+Random Forest (Tuned)	97.4%
+SVM (Tuned)	97.4%
+Gradient Boosting	95.6%
+Logistic Regression	96.5%
+K-Nearest Neighbors	95.6%
   
 ## Findings
 Top Predictive Features: The most important features for classification are:
